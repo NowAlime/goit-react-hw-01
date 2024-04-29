@@ -7,7 +7,6 @@ import transactions from "./transactions.json";
 import friends from "./friends.json";
 
 
-
 export const App = () => {
     return (
       <>
