@@ -1,4 +1,4 @@
-import "modern-normalize";
+
 import Profile from "../Profile/Profile";
 import userData from "../../userData.json";
 import Friends from "../../friends.json";
