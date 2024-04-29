@@ -2,8 +2,9 @@ import css from "./Profile.module.css";
 import PropTypes from "prop-types";
 
 
+/*переробила на стрілочну */
 
-export const Profile = ({ name, tag, location, image, stats }) => {
+export const Profile = ({ name, tag, image, location, stats }) => {
     const { followers, views, likes } = stats;
   
     return (
@@ -11,7 +12,7 @@ export const Profile = ({ name, tag, location, image, stats }) => {
         <div className={css.info}>
           <img className={css.avatar} src={image} alt="User" width="150" />
           <p className={css.name}>{name}</p>
-          <p className={css.tag}>@{tag}</p>
+          <p className={css.tag}>{tag}</p>
           <p className={css.location}>{location}</p>
         </div>
         <ul className={css.list}>

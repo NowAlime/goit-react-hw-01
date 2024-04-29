@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 export function FriendListItem({ friend: { avatar, name, isOnline } }) {
   return (
     <div>
-      <img className={css.avatar} src={avatar} alt="User avatar" width="80" />
+      <img className={css.avatar} src={avatar} alt="User" width="80" />
       <p className={css.name}>{name}</p>
       <p className={isOnline ? css.isOnline : css.isOffline}>
         {isOnline ? "Online" : "Offline"}

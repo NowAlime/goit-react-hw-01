@@ -8,8 +8,8 @@ export const TransactionHistory = ({ transactions }) => {
   }));
   return (
     <table className={css.table}>
-      <thead className={css.tableHead}>
-        <tr className={css.tableRow}>
+      <thead className={css.head}>
+        <tr className={css.tableDown}>
           <th>Type</th>
           <th>Amount</th>
           <th>Currency</th>
@@ -18,7 +18,7 @@ export const TransactionHistory = ({ transactions }) => {
 
       <tbody className={css.tableBody}>
         {transformedTransactions.map((transaction) => (
-          <tr className={css.tableRow} key={transaction.id}>
+          <tr className={css.tableDown} key={transaction.id}>
             <td className={css.tableDescription}>{transaction.type}</td>
             <td className={css.tableDescription}>{transaction.amount}</td>
             <td className={css.tableDescription}>{transaction.currency}</td>
